@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:noHistory = "false"
+    tools:context=".Chess">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/chessboard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp">
+
+            <ImageButton
+                android:id="@+id/imageButton00"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/brook" />
+
+            <ImageButton
+                android:id="@+id/imageButton01"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bknight" />
+
+            <ImageButton
+                android:id="@+id/imageButton02"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bbishop" />
+
+            <ImageButton
+                android:id="@+id/imageButton03"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bqueen" />
+
+            <ImageButton
+                android:id="@+id/imageButton04"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bking" />
+
+            <ImageButton
+                android:id="@+id/imageButton05"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bbishop" />
+
+            <ImageButton
+                android:id="@+id/imageButton06"
+                android:layout_width="47.5dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bknight" />
+
+            <ImageButton
+                android:id="@+id/imageButton07"
+                android:layout_width="48dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/brook" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp">
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton12"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton15"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton16"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton17"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bpawn" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp">
+
+            <ImageButton
+                android:id="@+id/imageButton20"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton21"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton22"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton23"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton24"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton25"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton26"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton27"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp">
+
+            <ImageButton
+                android:id="@+id/imageButton30"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton31"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton32"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton33"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton34"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton35"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton36"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton37"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp">
+
+            <ImageButton
+                android:id="@+id/imageButton40"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton41"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton42"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton43"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton44"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton45"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton46"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton47"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp">
+
+            <ImageButton
+                android:id="@+id/imageButton50"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton51"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton52"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton53"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton54"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton55"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton56"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/imageButton57"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp">
+
+            <ImageButton
+                android:id="@+id/imageButton60"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton61"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton62"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton63"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton64"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton65"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton66"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/imageButton67"
+                android:layout_width="47.5dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wpawn" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp">
+
+            <ImageButton
+                android:id="@+id/imageButton70"
+                android:layout_width="47.5dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wrook" />
+
+            <ImageButton
+                android:id="@+id/imageButton71"
+                android:layout_width="47.5dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wknight" />
+
+            <ImageButton
+                android:id="@+id/imageButton72"
+                android:layout_width="47.5dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wbishop" />
+
+            <ImageButton
+                android:id="@+id/imageButton73"
+                android:layout_width="47.5dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wqueen" />
+
+            <ImageButton
+                android:id="@+id/imageButton74"
+                android:layout_width="47.5dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wking" />
+
+            <ImageButton
+                android:id="@+id/imageButton75"
+                android:layout_width="47.5dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wbishop" />
+
+            <ImageButton
+                android:id="@+id/imageButton76"
+                android:layout_width="47.5dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wknight" />
+
+            <ImageButton
+                android:id="@+id/imageButton77"
+                android:layout_width="48dp"
+                android:layout_height="47.5dp"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:onClick="movePiece"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wrook" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/selectedText"
+        android:layout_width="123dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="5dp"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/turnText"
+        android:layout_width="123dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="15dp"
+        android:foregroundGravity="center|center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="White's Move"
+        app:layout_constraintBottom_toTopOf="@+id/selectedText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/aiClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="aiClick"
+        android:text="AI"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="undo"
+        android:text="Undo"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="161dp"
+        android:onClick="exit"
+        android:text="Exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:onClick="draw"
+        android:text="Draw"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="resign"
+        android:text="Resign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

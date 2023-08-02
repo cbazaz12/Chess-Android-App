@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android51</string>
+    <string name="knight">knight</string>
+    <string name="select_promotion">Select Promotion</string>
+</resources>

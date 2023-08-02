@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamesList">
+
+    <ListView
+        android:id="@+id/listGames"
+        android:layout_width="361dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="358dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="none"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Select a Game to Watch Replay"
+        app:layout_constraintBottom_toTopOf="@+id/listGames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="110dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="back"
+        android:text="Back"
+        app:layout_constraintEnd_toStartOf="@+id/button14"
+        app:layout_constraintStart_toEndOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/listGames" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="110dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="sortByName"
+        android:text="Sort By Name"
+        app:layout_constraintEnd_toStartOf="@+id/button11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listGames" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="110dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="27dp"
+        android:onClick="sortByDate"
+        android:text="Sort By Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/listGames" />
+</androidx.constraintlayout.widget.ConstraintLayout>

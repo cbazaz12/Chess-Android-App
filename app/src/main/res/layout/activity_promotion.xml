@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="clickKnight"
+    tools:context=".Promotion">
+
+    <Button
+        android:id="@+id/queen"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="160dp"
+        android:onClick="clickQueen"
+        android:text="Queen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/knight"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="160dp"
+        android:onClick="clickKnight"
+        android:text="Knight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bishop" />
+
+    <Button
+        android:id="@+id/rook"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="160dp"
+        android:onClick="clickRook"
+        android:text="Rook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/queen" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="184dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="179dp"
+        android:text="@string/select_promotion"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Bishop"
+        android:layout_width="99dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="45dp"
+        android:onClick="clickBishop"
+        android:text="Bishop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rook" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
